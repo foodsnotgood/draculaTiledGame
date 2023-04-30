@@ -3,20 +3,20 @@ import 'package:bonfire/bonfire.dart';
 class PlayerSpriteSheet {
 
   static Future<SpriteAnimation> get idleRight => SpriteAnimation.load(
-    "knight_idle.png",
+    "player/hero_idle.png",
     SpriteAnimationData.sequenced(
-      amount: 6,
+      amount: 4,
       stepTime: 0.1,
-      textureSize: Vector2(16, 16),
+      textureSize: Vector2(50, 37),
     ),
   );
 
   static Future<SpriteAnimation> get runRight => SpriteAnimation.load(
-    "knight_run.png",
+    "player/hero_run.png",
     SpriteAnimationData.sequenced(
       amount: 6,
       stepTime: 0.1,
-      textureSize: Vector2(16, 16),
+      textureSize: Vector2(50, 37),
     ),
   );
 

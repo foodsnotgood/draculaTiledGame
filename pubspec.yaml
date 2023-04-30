@@ -23,3 +23,11 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/images/draculatiles/maps/
+    - assets/images/draculatiles/tilesets/
+    - assets/images/draculatiles/items/
+    - assets/images/draculatiles/RF_Catacombs_v1.0/
+    - assets/images/draculascastletiles/
+    - assets/images/draculascastletiles/map/
+    - assets/images/draculascastletiles/tiles/
+    - assets/images/player/
