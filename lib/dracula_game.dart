@@ -6,6 +6,7 @@ import 'package:dracula_game/decorations/candle.dart';
 import 'package:dracula_game/decorations/coffin1.dart';
 import 'package:dracula_game/decorations/coffin2.dart';
 import 'package:dracula_game/decorations/column.dart';
+import 'package:dracula_game/decorations/torch.dart';
 import 'package:dracula_game/interface/knight_interface.dart';
 import 'package:dracula_game/players/knight.dart';
 import 'package:flutter/cupertino.dart';
@@ -57,6 +58,7 @@ class _DraculaGameState extends State<DraculaGame> implements GameListener {
           kColumn: (p) => ColumnDecoration(p.position, p.size),
           kCoffin1: (p) => Coffin1(p.position, p.size),
           kCoffin2: (p) => Coffin2(p.position, p.size),
+          kTorch: (p) => TorchDecoration(p.position),
         }
       ),
       lightingColorGame: Colors.black.withOpacity(0.6),
