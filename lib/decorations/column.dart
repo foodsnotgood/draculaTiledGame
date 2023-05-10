@@ -3,7 +3,7 @@ import 'package:dracula_game/dracula_game.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
-import '../players/knight.dart';
+import '../players/hero.dart';
 
 class ColumnDecoration extends GameDecoration with ObjectCollision {
   ColumnDecoration(Vector2 position, Vector2 size) : super.withSprite(

@@ -1,8 +1,5 @@
-import 'package:bonfire/bonfire.dart';
 import 'package:dracula_game/dracula_game.dart';
-import 'package:dracula_game/players/knight.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

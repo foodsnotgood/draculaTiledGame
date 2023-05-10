@@ -8,7 +8,7 @@ import 'package:dracula_game/decorations/coffin2.dart';
 import 'package:dracula_game/decorations/column.dart';
 import 'package:dracula_game/decorations/torch.dart';
 import 'package:dracula_game/interface/knight_interface.dart';
-import 'package:dracula_game/players/knight.dart';
+import 'package:dracula_game/players/hero.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +47,7 @@ class _DraculaGameState extends State<DraculaGame> implements GameListener {
         directional: JoystickDirectional(),
       ),
       interface: KnightInterface(),
-      player: Knight(Vector2(2 * tileSize, 97 * tileSize)),
+      player: HeroPlayer(Vector2(2 * tileSize, 97 * tileSize)),
       // showCollisionArea:true,
       map: WorldMapByTiled(
         'draculascastletiles/map/mainmap.json',

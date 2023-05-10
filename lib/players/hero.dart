@@ -6,9 +6,10 @@ import 'package:flutter/material.dart';
 
 import '../utils/functions.dart';
 
-class Knight extends SimplePlayer with Lighting, ObjectCollision {
+class HeroPlayer extends SimplePlayer with Lighting, ObjectCollision {
   final List<String> collectibles = [];
-  Knight(Vector2 position)
+  double lightradius = 1.5;
+  HeroPlayer(Vector2 position)
       : super(
     animation: PlayerSpriteSheet.simpleDirectionAnimation,
     size: Vector2.all(tileSize),
@@ -29,9 +30,15 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision {
               ))
         ])
     );
+  }
 
-    setupLighting(
-      LightingConfig(radius: width * 1.5, color: Colors.deepOrangeAccent.withOpacity(0.2), blurBorder: width)
-    );
+  @override
+  void update(double dt) {
+    if (collectibles.contains(kCandleCollectible)){
+      setupLighting(
+          LightingConfig(radius: width * lightradius, color: Colors.deepOrangeAccent.withOpacity(0.2), blurBorder: width)
+      );
+    }
+    super.update(dt);
   }
 }

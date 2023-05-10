@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "996038819421",
+    "project_id": "dracula-rpg-game",
+    "storage_bucket": "dracula-rpg-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996038819421:android:44763a5d0762b986d297b4",
+        "android_client_info": {
+          "package_name": "be.johannesroeder.dracula_game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996038819421-g2nmj3mnugqck8pgl5gamrsr43fg3id7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfq2odWlpfuMqUI7etaLhceVYJafdszpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996038819421-g2nmj3mnugqck8pgl5gamrsr43fg3id7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996038819421-b8flf26ma4ahhncfsnhaghh9b1j9jspq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "be.johannesroeder.draculaGame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

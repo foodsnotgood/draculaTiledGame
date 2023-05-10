@@ -1,7 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:dracula_game/constants.dart';
-import 'package:dracula_game/dracula_game.dart';
-import 'package:dracula_game/players/knight.dart';
+import 'package:dracula_game/players/hero.dart';
 import 'package:flutter/material.dart';
 
 class CandleCollectible extends GameDecoration with Lighting, Sensor {
@@ -13,14 +12,14 @@ class CandleCollectible extends GameDecoration with Lighting, Sensor {
       ),
       position: position, size: Vector2(7, 14)){
     setupLighting(
-        LightingConfig(radius: width * 4, color: Colors.deepOrangeAccent.withOpacity(0.2), blurBorder: width*1.5)
+        LightingConfig(radius: width * 6, color: Colors.deepOrangeAccent.withOpacity(0.2), blurBorder: width*4)
     );
   }
 
   @override
   void onContact(GameComponent component
       ) {
-    if (component is Knight && !(component).collectibles.contains(kCandleCollectible)) {
+    if (component is HeroPlayer && !(component).collectibles.contains(kCandleCollectible)) {
       component.collectibles.add(kCandleCollectible);
       removeFromParent();
     }

@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:bonfire/bonfire.dart';
 import 'package:dracula_game/constants.dart';
-import 'package:dracula_game/players/knight.dart';
+import 'package:dracula_game/players/hero.dart';
 
 class KnightInterface extends GameInterface {
   late Sprite candleCollectible;
@@ -25,9 +25,9 @@ class KnightInterface extends GameInterface {
 
   void _drawCollectible(Canvas canvas) {
     if (gameRef.player != null &&
-        (gameRef.player as Knight).collectibles.contains(kCandleCollectible)) {
+        (gameRef.player as HeroPlayer).collectibles.contains(kCandleCollectible)) {
       candleCollectible.renderRect(
-          canvas, const Rect.fromLTWH(20, 50, 30, 35));
+          canvas, const Rect.fromLTWH(20, 50, 25, 25));
     }
   }
 }
