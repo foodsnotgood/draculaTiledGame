@@ -1,10 +1,16 @@
 import 'package:dracula_game/dracula_game.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  await Firebase.initializeApp();
+  runApp(const ProviderScope(child: MyApp()));
 }
+
+final savedStateProvider = StateProvider<bool>((ref) => false);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

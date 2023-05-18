@@ -1,5 +1,8 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:dracula_game/dracula_game.dart';
+import 'package:dracula_game/utils/database.dart';
+
+import '../players/hero.dart';
 
 class Coffin2 extends GameDecoration with ObjectCollision {
   Coffin2(Vector2 position, Vector2 size) :
