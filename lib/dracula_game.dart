@@ -69,7 +69,7 @@ class _DraculaGameState extends State<DraculaGame>
                     kCoffin2: (p) => Coffin2(p.position, p.size),
                     kBook: (p) => BookDecoration(p.position),
                   }),
-              lightingColorGame: Colors.black.withOpacity(0.4),
+              lightingColorGame: Colors.black.withOpacity(0.6),
               background: BackgroundColorGame(Colors.grey[900]!),
             );
           } else {
@@ -78,32 +78,6 @@ class _DraculaGameState extends State<DraculaGame>
             );
           }
         });
-
-    // return BonfireWidget(
-    //   gameController: _controller,
-    //   joystick: Joystick(
-    //     keyboardConfig: KeyboardConfig(),
-    //     directional: JoystickDirectional(),
-    //   ),
-    //   interface: KnightInterface(),
-    //   player: HeroPlayer(startingPosition),
-    //   // showCollisionArea:true,
-    //   map: WorldMapByTiled(
-    //     'draculascastletiles/map/mainmap.json',
-    //     forceTileSize: Vector2(tileSize, tileSize),
-    //     objectsBuilder: {
-    //       kCandleCollectible: (p) => CandleCollectible(p.position),
-    //       kWallCollision: (p) => Wall(p.position, p.size),
-    //       kColumn: (p) => ColumnDecoration(p.position, p.size),
-    //       kTorch: (p) => TorchDecoration(p.position),
-    //       kCoffin1: (p) => Coffin1(p.position, p.size),
-    //       kCoffin2: (p) => Coffin2(p.position, p.size),
-    //       kBook: (p) => BookDecoration(p.position),
-    //     }
-    //   ),
-    //   lightingColorGame: Colors.black.withOpacity(0.4),
-    //   background: BackgroundColorGame(Colors.grey[900]!),
-    // );
   }
 
   @override
