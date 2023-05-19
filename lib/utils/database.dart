@@ -8,14 +8,14 @@ mixin DatabaseConnecting {
   var db = FirebaseFirestore.instance;
   var defaultUser2 = <String, dynamic>{
     "name": "Johannes",
-    "positionX": 2 * tileSize,
-    "positionY": 240 * tileSize,
+    "positionX": 10 * tileSize,
+    "positionY": 250 * tileSize,
   };
 
   User defaultUser = User(
       name: "Johannes", positionX: 2 * tileSize, positionY: 240 * tileSize);
 
-  Future<void> save(Vector2 position, bool saved) async {
+  Future<void> save(Vector2 position) async {
     db
         .collection("users")
         .where("name", isEqualTo: defaultUser.name)
@@ -54,5 +54,3 @@ mixin DatabaseConnecting {
     return Vector2(user.positionX, user.positionY);
   }
 }
-
-

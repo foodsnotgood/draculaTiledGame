@@ -17,7 +17,7 @@ class BookDecoration extends GameDecoration with Sensor, DatabaseConnecting {
   void onContact(GameComponent component) {
     if (component is HeroPlayer ) {
       print('player position : ${component.absolutePosition}');
-      save(position, true);
+      save(position);
       removeFromParent();
     }
   }
