@@ -6,11 +6,6 @@ import '../model/user.dart';
 
 mixin DatabaseConnecting {
   var db = FirebaseFirestore.instance;
-  var defaultUser2 = <String, dynamic>{
-    "name": "Johannes",
-    "positionX": 10 * tileSize,
-    "positionY": 250 * tileSize,
-  };
 
   User defaultUser = User(
       name: "Johannes", positionX: 2 * tileSize, positionY: 240 * tileSize);

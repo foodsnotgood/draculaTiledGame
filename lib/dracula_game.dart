@@ -69,7 +69,7 @@ class _DraculaGameState extends State<DraculaGame>
                     kCoffin2: (p) => Coffin2(p.position, p.size),
                     kBook: (p) => BookDecoration(p.position),
                   }),
-              lightingColorGame: Colors.black.withOpacity(0.6),
+              lightingColorGame: Colors.black.withOpacity(0.5),
               background: BackgroundColorGame(Colors.grey[900]!),
             );
           } else {
